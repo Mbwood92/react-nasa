@@ -4,20 +4,25 @@ import { useParams } from "react-router-dom";
 import Results from "../components/Results";
 
 function Nasalist() {
+  // add state to hold the data of the form
     const [formData, setFormData] = useState({
         searchterm: "",
       });
       const [infoData, setInfoData] = useState(null);
     
+      //handleChange - updates formData when we type into form
       const handleChange = (event) => {
+       //use the event object to detect key and value to update
         setFormData({ ...formData, [event.target.name]: event.target.value });
       };
     
       const handleSubmit = (event) => {
+        // prevent page from refreshing on form submissin
         event.preventDefault();
         getSreach(formData.searchterm);
       };
     
+      // fetch data from nasa website 
       const getSreach = async (keyword) => {
         const url = `https://images-api.nasa.gov/search?q=${keyword}`;
         try {
@@ -28,14 +33,14 @@ function Nasalist() {
           console.error(e);
         }
       };
-    
+    //fetch the data onto my react 
       useEffect(() => {
         getSreach();
       }, []);
-    
+    // renders
       return (
         <>
-          <div>Search here</div>
+         <div>Search here</div> 
           <div>
             <form onSubmit={handleSubmit}>
               <input

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+//nav bar at top of screen for each link 
 export default function Nav (props){
   return (
     <div className="nav">

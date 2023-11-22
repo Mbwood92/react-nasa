@@ -1,11 +1,15 @@
 .nav {
-  display: ;
+  display: flex;
   justify-content: space-between;
-  background-color: navy
- 
+  background-color: navy;
+  color: white;
+  padding: 15px;
+  font-size: 2em;
 }
-
-
+.nav a {
+  color: white;
+  text-decoration: none;
+}
 
 .card {
   float: left;
@@ -15,17 +19,15 @@
   background-color: whitesmoke;
   margin: 10px 20px;
   overflow: hidden;
-  
 }
 
 .card-image {
-  max-width: 70%; 
-  max-height: 70%; 
-  display: block; 
-  margin: 0 auto; 
-  
+  max-width: 70%;
+  max-height: 70%;
+  display: block;
+  margin: 0 auto;
 }
 
-.font{
+.font {
   font-size: x-small;
 }
