@@ -1,0 +1,31 @@
+.nav {
+  display: ;
+  justify-content: space-between;
+  background-color: navy
+ 
+}
+
+
+
+.card {
+  float: left;
+  width: 350px;
+  height: 400px;
+  text-align: center;
+  background-color: whitesmoke;
+  margin: 10px 20px;
+  overflow: hidden;
+  
+}
+
+.card-image {
+  max-width: 70%; 
+  max-height: 70%; 
+  display: block; 
+  margin: 0 auto; 
+  
+}
+
+.font{
+  font-size: x-small;
+}
